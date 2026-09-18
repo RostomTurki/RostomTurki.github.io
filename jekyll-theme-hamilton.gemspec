@@ -3,11 +3,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-hamilton"
   spec.version       = "4.0.0"
-  spec.authors       = ["Shangzhi Huang"]
-  spec.email         = ["ngzhio@gmail.com"]
+  spec.authors       = ["Rostom Turki"]
+  spec.email         = ["rostom.turki@univ-lille.fr"]
 
   spec.summary       = "A minimal and beautiful Jekyll theme best for writing and note-taking."
-  spec.homepage      = "https://github.com/ngzhio/jekyll-theme-hamilton"
+  spec.homepage      = "https://github.com/RostomTurki/jekyll-theme-hamilton"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
@@ -21,4 +21,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_runtime_dependency "base64"
+  spec.add_runtime_dependency "bigdecimal"
 end
